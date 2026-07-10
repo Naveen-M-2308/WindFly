@@ -1,0 +1,98 @@
+#contact {
+  width: 90vw;
+  height: 78vh;
+  border: 5px solid whitesmoke;
+  border-radius: 20px;
+  position: relative;
+  top: 4vh;
+  left: 4vw;
+  box-shadow: 2px 2px 2px black;
+}
+
+#con-head {
+  position: absolute;
+  top: 10vh;
+  left: 7vw;
+}
+#con-head1 {
+  position: absolute;
+  top: 20vh;
+  left: 0vw;
+}
+
+.contact-line {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.icon {
+  color: blue;
+  border: 6px solid whitesmoke;
+  border-radius: 20px;
+}
+#con-body {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  border: 2px solid #eee;
+  border-radius: 15px;
+  box-shadow: 2px 2px 2px whitesmoke;
+  position: absolute;
+  right: 4vw;
+  top: 3vh;
+  background: white;
+}
+.contact-form {
+  width: 100%;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+input,
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+}
+
+input:focus,
+textarea:focus {
+  border-color: blue;
+}
+
+#con-submit {
+  padding: 10px;
+  background: blue;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#con-submit:hover {
+  background-color: darkblue;
+}
+@media (max-width: 764px) {
+  #contact {
+    width: 90vw;
+    height: 70vh;
+    border: 5px solid whitesmoke;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px black;
+  }
+  #con-head1 {
+    display: none;
+  }
+  #con-body {
+    position: absolute;
+    top: 25vh;
+    left: 8vw;
+    
+  }
+}

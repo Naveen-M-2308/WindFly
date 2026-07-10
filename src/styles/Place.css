@@ -1,0 +1,93 @@
+#Main_container {
+    width: 90vw;
+    min-height: 60vh;
+    background-color: whitesmoke;
+    box-shadow: 2px 2px 2px black;
+    border: 2px solid black;
+    border-radius: 20px;
+
+    position: relative;
+    top: 10vh;
+    left: 4vw;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+
+    overflow-y: auto;
+}
+
+
+#main2 {
+    flex: 1 1 300px;
+    min-width: 200px;
+
+    background-color: whitesmoke;
+    border: 2px solid black;
+    border-radius: 20px;
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+}
+
+
+#main21 img {
+    width: 180px;
+    height: 180px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+
+#main22 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+
+#main22 h3 {
+    color: blue;
+    margin-bottom: 5px;
+}
+#main2:hover{
+    cursor: pointer;
+    transform: scale(1.03);  
+}
+#main21:hover{
+    cursor: pointer;
+    transform: scale(1.03);  
+}
+#main22:hover{
+    cursor: pointer;
+    transform: scale(1.03);  
+}
+
+#btn-bk {
+    margin-top: 15px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+#btn-bk:hover {
+    background-color: whitesmoke;
+    color: green;
+}
+
+
+@media (max-width: 764px) {
+    #btn-bk {
+       width: 200px;
+
+    }
+
+    #btn-bk:hover {
+        background-color: whitesmoke;
+        color: green;
+    }
+}

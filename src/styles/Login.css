@@ -1,0 +1,127 @@
+#login-head{
+    width: 80vw;
+    height: 94vh;
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px black;
+    position: relative;
+    top: 5vh;
+    left: 10vw;
+}
+.web-bg1{
+  background-image: url('../assets/Login1.jpg');  
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  background-attachment:scroll; 
+  height: 130vh; 
+}
+#login-left{
+     width: 400px;
+    height: 85vh;
+    border: 2px solid whitesmoke;
+     box-shadow: 2px 2px 2px black;
+    border-radius: 20px;
+    background-color: whitesmoke;
+    position: absolute;
+    top: 4vh;
+    right: 5vw;
+}
+#login-left h2{
+   position: absolute;
+   top: 5vh;
+   left: 3vw;
+}
+#login-left p{
+   position: absolute;
+   top: 13vh;
+   left: 3vw;
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;                 
+    width: 300px;
+    margin-top: 10px;
+    margin-left: 20px;
+    padding: 25px;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    position: absolute;
+    top: 20vh;
+}
+#login-form p{
+    margin-top: 20vh;
+    padding-left: 13vw;
+}
+#login-form p:hover{
+    margin-top: 20vh;
+    padding-left: 13vw;
+    color: blue;
+    cursor: pointer;
+}
+
+#login-form label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+
+
+#login-form input {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: 0.3s;
+}
+
+#login-form input:focus {
+    border-color: green;
+    box-shadow: 0 0 5px rgba(0,128,0,0.4);
+}
+
+#login-form button {
+    width: 100%;             
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#login-form button:hover {
+    background-color: green;
+    color: whitesmoke;
+    transform: scale(1.03);   
+}
+#login-last{
+    width: 30vw;
+    position: absolute;
+    bottom: 22vh;
+    left: 5vw;
+}
+#login-last span{
+    color: blue;    
+}
+@media (max-width:764px) {
+    #login-left{
+        width: 60vw;
+        height: 70vh;
+        position: absolute;
+        left: 5vw;
+    }
+    #login-form{
+        position: absolute;
+        left: 4vw;
+    }
+    #login-last p{
+        width: 60vw;
+        position: absolute;
+        left: 12vw;
+    }
+}

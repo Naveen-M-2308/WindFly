@@ -1,0 +1,44 @@
+#ex-top h1 {
+  text-align: center;
+  margin: 40px;
+  color: blue;
+}
+#btn-all {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    
+}
+.cat-all{
+    width: 100px;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: blue;
+    font-weight: bolder;
+    text-transform: capitalize !important;
+}
+.cat-all:hover{
+    border-radius: 8px;
+    cursor: pointer;
+    color: whitesmoke;
+    background-color: green;
+    font-weight: bolder;
+    text-transform: capitalize !important;
+}
+.cat-all:focus{
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: blue;
+    color: whitesmoke;
+    font-weight: bolder;
+    text-transform: capitalize !important;
+}
+#exp-foot{
+    position: relative;
+    top: -65vh;
+    padding-left: 5vw;
+}
+
