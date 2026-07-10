@@ -45,7 +45,7 @@
     text-align: center;
     padding-bottom: 10px;
 }
-@media (max-width:764px) {
+@media (max-width:600px) {
   #foot-head{
     position: absolute;
     top: 8vh;

@@ -139,7 +139,7 @@ border-bottom: 2px solid blue;
     height: 90vh;
 
 }
-@media (max-width:764px) {
+@media (max-width:600px) {
     #topic h1{
         position: relative;
         top: 3vh;

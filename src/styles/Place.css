@@ -80,7 +80,7 @@
 }
 
 
-@media (max-width: 764px) {
+@media (max-width:600px) {
     #btn-bk {
        width: 200px;
 

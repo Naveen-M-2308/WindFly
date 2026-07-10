@@ -78,7 +78,7 @@ textarea:focus {
 #con-submit:hover {
   background-color: darkblue;
 }
-@media (max-width: 764px) {
+@media (max-width:600px) {
   #contact {
     width: 90vw;
     height: 70vh;

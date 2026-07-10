@@ -108,7 +108,7 @@
 #login-last span{
     color: blue;    
 }
-@media (max-width:764px) {
+@media (max-width:600px) {
     #login-left{
         width: 60vw;
         height: 70vh;
