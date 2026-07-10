@@ -92,7 +92,8 @@ textarea:focus {
   #con-body {
     position: absolute;
     top: 25vh;
-    left: 8vw;
-    
+    left: 3vw;
+    width: 60vw;
+    height: 38vh;
   }
 }
