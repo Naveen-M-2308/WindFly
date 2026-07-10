@@ -70,6 +70,10 @@
   gap: 10px;
   margin-top: 7vh;
 } 
+#foot-middle{
+  position: absolute;
+  right: 10vw;
+}
 
 #foot{
   display: none;
