@@ -70,10 +70,9 @@
   gap: 10px;
   margin-top: 7vh;
 } 
+
 #foot{
-   position: absolute;
-    top: 8vh;
-    right: 10vw;
+  display: none;
 }
 #copyright{
  color: black ;
