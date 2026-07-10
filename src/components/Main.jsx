@@ -18,7 +18,7 @@ function Main() {
         <div id="main">
           <div id="topic">
             <TbPlaneTiltFilled size={35} color="blue" />
-            <h1 id="tp1">Windfly</h1>
+            <h2 id="tp1">Windfly</h2>
           </div>
           <div id="nav-link">
             <Navbar />
