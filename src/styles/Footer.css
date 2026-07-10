@@ -72,7 +72,7 @@
 } 
 #foot-middle{
   position: absolute;
-  right: 10vw;
+  right: 12vw;
 }
 
 #foot{
@@ -81,6 +81,6 @@
 #copyright{
  color: black ;
     text-align: center;
-    margin-top: 20vh;
+    margin-top: 35vh;
 }
 }
