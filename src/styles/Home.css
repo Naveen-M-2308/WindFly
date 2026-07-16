@@ -226,3 +226,27 @@ header {
     top: 8vh;
   }
 }
+
+@media (max-width: 600px) {
+  #nav-link {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    left: 23vw;
+    right: 0;
+    width: 100%;
+    z-index: 10;
+  }
+  #nav-link.show {
+    display: flex;
+  }
+  #menu-btn {
+    position: absolute;
+    top: 2vh;
+    left: 10vw;
+    display: block;
+    background: none;
+    border: none;
+    font-size: 20px;
+  }
+}

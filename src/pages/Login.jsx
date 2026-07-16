@@ -2,6 +2,7 @@ import React from "react";
 import "../styles/Login.css";
 import Login1 from "../assets/Login1.jpg";
 import Main from "../components/Main";
+
 function Login() {
   return (
     <>
