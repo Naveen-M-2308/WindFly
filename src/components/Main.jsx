@@ -10,7 +10,6 @@ function Main() {
   const handleNavigation1 = () => {
     navigate("/login");
   };
-
   
   return (
     <div>
