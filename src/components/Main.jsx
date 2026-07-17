@@ -3,7 +3,7 @@ import { TbPlaneTiltFilled } from "react-icons/tb";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
-
+import '../styles/Main.css'
 function Main() {
   const navigate = useNavigate();
   const [showNav, setShowNav] = useState(false);
@@ -21,7 +21,7 @@ function Main() {
       <div id="main">
         
         <div id="topic">
-          <TbPlaneTiltFilled size={35} color="blue" />
+          <TbPlaneTiltFilled size={35} color="blue" id="fly" />
           <h2 id="tp1">Windfly</h2>
 
           {/* Hamburger */}
