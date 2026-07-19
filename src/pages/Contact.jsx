@@ -1,14 +1,52 @@
-import React from "react";
+import React, { useState } from "react";
 import Main from "../components/Main";
 import "../styles/Contact.css";
 import { HiOutlineMail } from "react-icons/hi";
 import { FaPhoneAlt } from "react-icons/fa";
 import { CiLocationOn } from "react-icons/ci";
 import Footer from "../components/Footer";
+import Alert from '@mui/material/Alert'; 
+import CheckIcon from '@mui/icons-material/Check'
 
 function Contact() {
+  const [success, setSuccess] = useState(false);
+  const [error, setError] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const name = document.getElementById("uname").value;
+    const email = document.getElementById("uemail").value;
+    const message = document.getElementById("umessage").value;
+    
+    if (name =="") {
+      setError("Name fields are required!");
+      setSuccess(false);
+    }
+    else if(email =="") {
+      setError("Email fields are required!");
+      setSuccess(false);
+    }
+    else if (message =="") {
+      setError("Message fields are required!");
+      setSuccess(false);
+    }
+    else{
+      setError("");
+    setSuccess(`Your name is ${name}, message: ${message} received Successfully`);
+    }
+
+  };
+
   return (
     <>
+
+      {error && <Alert severity="error">{error}</Alert>}
+      {success && (
+        <Alert severity="success">
+          {success}
+        </Alert>
+      )}
       <Main />
       <div id="contact">
         <div id="con-head">
@@ -44,7 +82,7 @@ function Contact() {
         </div>
 
         <div id="con-body">
-          <form className="contact-form">
+          <form className="contact-form" onSubmit={handleSubmit}>
             <div className="form-group">
               <label htmlFor="uname">Your Name:</label>
               <input
