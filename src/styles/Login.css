@@ -149,6 +149,7 @@
     position: absolute;
     bottom: -10vh;
      width: 60vw; 
+     margin-left: 10px;
 }
 #login-last{
     width: 100%;
