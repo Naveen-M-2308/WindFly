@@ -113,11 +113,13 @@ header {
 }
   #nav-link {
     display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 12px;
-    width: 100%;
-    padding: 16px;
+    flex-direction: row;
+    align-items:center;
+    gap: 5px;
+    width: 50vw;
+    height: 60vh;
+    position: absolute;
+    top: -1vh;
   }
 
   #nav-link.show {
