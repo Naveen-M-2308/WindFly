@@ -114,10 +114,12 @@
 }
 
 @media (max-width:480px) {
+
   #login-left{
     position: absolute;
+    top: 7vh;
     left: 2vw;
-    width: 95%;
+    width: 75vw;
     height: 75vh;
   } 
 
