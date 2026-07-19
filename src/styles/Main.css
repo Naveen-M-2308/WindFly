@@ -100,7 +100,8 @@ header {
   /* Show hamburger on mobile */
   #menu-btn {
     position: absolute;
-    left:1vw;
+    left:-2vw;
+    top: 2vh;
     display: block;
   }
 
