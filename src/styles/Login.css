@@ -148,5 +148,12 @@
 #login-form button {
     position: absolute;
     bottom: -10vh;
+     width: 60vw; 
+}
+#login-last{
+    width: 100%;
+    position: absolute;
+    left: 10vw;
+    text-align: center;
 }
 }
