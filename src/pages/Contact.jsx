@@ -18,7 +18,7 @@ function Contact() {
     const name = document.getElementById("uname").value;
     const email = document.getElementById("uemail").value;
     const message = document.getElementById("umessage").value;
-    
+
     if (name =="") {
       setError("Name fields are required!");
       setSuccess(false);
@@ -41,14 +41,9 @@ function Contact() {
   return (
     <>
 
-      {error && <Alert severity="error">{error}</Alert>}
-      {success && (
-        <Alert severity="success">
-          {success}
-        </Alert>
-      )}
       <Main />
       <div id="contact">
+      
         <div id="con-head">
           <h1>Get in Touch</h1>
           <br></br>
@@ -83,6 +78,13 @@ function Contact() {
 
         <div id="con-body">
           <form className="contact-form" onSubmit={handleSubmit}>
+          
+      {error && <Alert severity="error">{error}</Alert>}
+      {success && (
+        <Alert severity="success">
+          {success}
+        </Alert>
+      )}
             <div className="form-group">
               <label htmlFor="uname">Your Name:</label>
               <input
