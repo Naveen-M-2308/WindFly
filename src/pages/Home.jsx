@@ -28,7 +28,7 @@ function Home() {
             Beauty Of The World
           </h2>
           <p id="two">
-            Pack your bags and get ready to see the world like a local.<br></br>{" "}
+            Pack your bags and get ready to see the world like a local.<br></br>
             We handle the stressful planning part so you can focus on making
             unforgettable memories.
           </p>

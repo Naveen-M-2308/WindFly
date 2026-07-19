@@ -2,46 +2,37 @@ import React, { useState } from "react";
 import { TbPlaneTiltFilled } from "react-icons/tb";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useNavigate } from "react-router-dom";
+import { FaUserPlus } from "react-icons/fa6";
 import Navbar from "../components/Navbar";
 import '../styles/Main.css'
 function Main() {
   const navigate = useNavigate();
-  const [showNav, setShowNav] = useState(false);
 
   const handleNavigation1 = () => {
     navigate("/login");
   };
 
-  const navAppear = () => {
-    setShowNav(!showNav);
-  };
 
   return (
     <header>
       <div id="main">
         
         <div id="topic">
-          <TbPlaneTiltFilled size={35} color="blue" id="fly" />
-          <h2 id="tp1">Windfly</h2>
+          <TbPlaneTiltFilled size={25} color="blue" id="fly" />
+          <h2>Windfly</h2>
+          </div>
 
-          {/* Hamburger */}
-          <button id="menu-btn" onClick={navAppear}>
-            <GiHamburgerMenu />
-          </button>
-        </div>
-
-        {/* Navbar */}
-        <div id="nav-link" className={showNav ? "show" : ""}>
+        <div id="nav-link">
           <Navbar />
         </div>
 
-        {/* Login Button */}
         <div id="btn-lg">
-          <button id="btn-log" onClick={handleNavigation1}>
-            Login
+          <button onClick={handleNavigation1} className="login-btn"><FaUserPlus size={25} />
+          <span>Login</span>
           </button>
-        </div>
 
+        </div>
+         
       </div>
     </header>
   );

@@ -21,7 +21,7 @@
     border: 2px solid whitesmoke;
      box-shadow: 2px 2px 2px black;
     border-radius: 20px;
-    background-color: whitesmoke;
+    background-color: rgba(245, 245, 245, 0);
     position: absolute;
     top: 4vh;
     right: 5vw;
@@ -46,34 +46,38 @@
     margin-left: 20px;
     padding: 25px;
     border-radius: 12px;
-    background-color: #ffffff;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
     position: absolute;
     top: 20vh;
 }
 #login-form p{
-    margin-top: 20vh;
-    padding-left: 13vw;
+    /* margin-top: 20vh;
+    padding-left: 13vw; */
+    position: absolute;
+    left: 10vw;
+    top: 32vh;
+     text-shadow: 2px 2px 2px wheat;
 }
 #login-form p:hover{
-    margin-top: 20vh;
-    padding-left: 13vw;
+    position: absolute;
+    left: 10vw;
+    top: 32vh;
     color: blue;
-    cursor: pointer;
+    cursor: pointer; 
+    text-shadow: 2px 2px 2px wheat;
+
 }
 
 #login-form label {
     font-size: 14px;
     font-weight: 600;
-    color: #333;
+    color:black;
+    text-shadow: 2px 2px 2px wheat;
 }
-
 
 #login-form input {
     padding: 10px;
     border-radius: 8px;
     border: 1px solid #ccc;
-    outline: none;
     transition: 0.3s;
 }
 
@@ -96,7 +100,6 @@
 
 #login-form button:hover {
     background-color: green;
-    color: whitesmoke;
     transform: scale(1.03);   
 }
 #login-last{
@@ -106,22 +109,38 @@
     left: 5vw;
 }
 #login-last span{
-    color: blue;    
+    color: blue;
+    cursor: pointer;    
 }
-@media (max-width:600px) {
-    #login-left{
-        width: 60vw;
-        height: 70vh;
-        position: absolute;
-        left: 5vw;
-    }
-    #login-form{
-        position: absolute;
-        left: 4vw;
-    }
-    #login-last p{
-        width: 60vw;
-        position: absolute;
-        left: 12vw;
-    }
+
+@media (max-width:480px) {
+  #login-left{
+    position: absolute;
+    left: 2vw;
+    width: 95%;
+    height: 85vh;
+  } 
+
+  .web-bg1{
+  background-image: url('../assets/Login1.jpg');  
+  background-repeat: no-repeat; 
+  background-size:200%; 
+  background-attachment:scroll; 
+  height: 130vh; 
+} 
+#login-form {
+    position: absolute;
+    left: -5vw;
+}
+#login-form p{
+    position: absolute;
+    left: 25vw;
+    top: 25vh;
+}
+#login-form p:hover{
+    position: absolute;
+    left: 25vw;
+    top: 25vh;
+    color: blue;
+}
 }

@@ -1,145 +1,89 @@
-header {
-  width: 100%;
-  background-color: #ffffff;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-
 #main {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 12px 40px;
-  max-width: 1200px;
-  margin: 0 auto;
   position: relative;
 }
-
-/* Logo / Topic section */
-#topic {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-#tp1 {
-  font-size: 32px;
-  font-weight: 700;
-  color: #1a1a1a;
+#fly {
   position: absolute;
-  top: 4vh;
+  left: 6.7vw;
+  top: 2vh;
+}
+#main h2 {
+  position: absolute;
+  top: 5vh;
+  left: 6vw;
+  color: rgba(0, 0, 255, 0.799);
 }
 
-/* Hamburger button - hidden by default on desktop */
-#menu-btn {
-  display: none;
-  background: none;
-  border: none;
-  font-size: 22px;
-  color: #1a1a1a;
-  cursor: pointer;
-  padding: 4px;
-  margin-left: auto;
-}
-
-/* Nav links */
 #nav-link {
-    position: absolute;
-    left: 30vw;
-    top: 2vh;
-}
-
-/* Login button wrapper */
-#btn-lg {
   display: flex;
-  align-items: center;
+  justify-content: center;
+  padding-top: 25px;
 }
 
-#btn-log {
-  background-color: #1a73e8;
-  color: #fff;
+#nav-link .nav-child {
+  text-decoration: none;
+  color: black;
+  padding: 20px;
+}
+#nav-link .nav-child:hover {
+  text-decoration: none;
+  color: rgba(0, 0, 255, 0.799);
+  padding: 20px;
+  border-bottom: 2px solid blue;
+}
+#nav-link .nav-child:active {
+  color: rgba(0, 0, 255, 0.799);
+  padding: 20px;
+  border-bottom: 2px solid blue;
+}
+#btn-lg {
+  position: absolute;
+  right: 5vw;
+  top: 2vh;
+}
+#btn-lg button{
+  color: blueviolet;
+  width: 90px;
+  border-radius: 10px;
+  background-color:whitesmoke;
   border: none;
-  padding: 8px 22px;
-  border-radius: 6px;
-  font-size: 15px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
+  padding-right: 30px;
+   cursor: pointer;
+}
+#btn-lg span{
+  position: absolute;
+  top: 2vh;
 }
 
-#btn-log:hover {
-  background-color: #1558b0;
+
+@media (max-width: 480px) {
+#main{
+  width: 100%;
+  height: 15vh;
+
+}
+#fly {
+  position: absolute;
+  left: 4vw;
+  top: 3vh;
+}
+#main h2 {
+  position: absolute;
+  top: 5vh;
+  left: 2vw;
+  font-size:x-large;
+  color: rgba(0, 0, 255, 0.799);
 }
 
-/* ===================== */
-/* Responsive: max-width 600px */
-/* ===================== */
-@media (max-width:600px) {
-  #main {
-    padding: 10px 16px;
-    flex-wrap: wrap;
-  }
-
-  #topic {
-    width: 100%;
-    justify-content: space-between;
-  }
-
-  #tp1 {
-    position: absolute;
-    font-size: 18px;
-
-  }
-  #fly{
-    position:relative;
-    left: 83vw;
-  }
-
-  /* Show hamburger on mobile */
-  #menu-btn {
-    position: absolute;
-    left:-2vw;
-    top: 2vh;
-    display: block;
-  }
-
-  /* Hide nav links by default, show as dropdown when toggled */
-  #nav-link {
-    position: absolute;
-    left: 13vw;
-    top: -1vh;
+#nav-link{
+  position: absolute;
+  left: 15vw;
+  top: 6vh;
 }
-  #nav-link {
-    display: none;
-    flex-direction: row;
-    align-items:center;
-    gap: 5px;
-    width: 50vw;
-    height: 60vh;
-    position: absolute;
-    top: -1vh;
-  }
 
-  #nav-link.show {
-    display: flex;
-  }
+#btn-lg {
+  position: absolute;
+  top: 2vh;
+  
+}
 
-  /* Login button below nav links on mobile */
-  #btn-lg {
-    width: 100%;
-    order: 4;
-  }
-
-  #btn-lg.show,
-  #nav-link.show ~ #btn-lg {
-    display: flex;
-  }
-
-  #btn-log {
-    display: none;
-    width: 100%;
-    padding: 10px;
-  }
 }

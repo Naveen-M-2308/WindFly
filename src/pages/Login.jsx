@@ -19,10 +19,10 @@ function Login() {
           </div>
 
           <div id="login-form">
-            <label htmlFor="user-mail">Email Address:</label>
+            <label htmlFor="user-mail">Email Address :</label>
             <input type="email" id="user-mail" />
 
-            <label htmlFor="user-pass">Password:</label>
+            <label htmlFor="user-pass">Password :</label>
             <input type="password" id="user-pass" />
             <br />
               <p>Forgot password ?</p>
