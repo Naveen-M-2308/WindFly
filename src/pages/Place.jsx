@@ -1,6 +1,7 @@
 import Button from "@mui/material/Button";
 import { TbShoppingCartPlus } from "react-icons/tb";
 import "../styles/Place.css";
+import Book from '../components/Book'
 
 function Place({ place}) {
   return (
@@ -15,6 +16,10 @@ function Place({ place}) {
             <h3>{place.name}</h3>
             <p>{place.price}</p>
            
+          </div>
+
+          <div>
+            <Book />
           </div>
         </div>
         

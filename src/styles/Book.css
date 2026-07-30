@@ -1,0 +1,38 @@
+#bookhead{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+#bookhead button{
+    width: 50px;
+    height: 30px;
+    border: none;
+    background-color: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+#btn-minus{
+    border-radius: 20px;
+}
+#btn-minus:hover{
+    background-color: red;
+    box-shadow: 0 0 12px crimson;
+    color: whitesmoke;
+}
+#btn-book{
+    width: 70px !important;
+    border-radius: 5px;
+}
+#btn-book:hover{
+    background-color: blue;
+    box-shadow: 0 0 12px blue;
+    color: whitesmoke;
+}
+#btn-plus{
+    border-radius: 20px;
+}
+#btn-plus:hover{
+    background-color: green;
+    box-shadow: 0 0 12px green;
+    color: whitesmoke;
+}
